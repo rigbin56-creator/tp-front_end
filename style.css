@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background: #1f1f1f;
+    font-family: Arial;
+    color: white;
+}
+
+.top-header {
+    padding: 15px;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background: #7e00ff;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.carrusel {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car-item {
+    display: inline-block;
+    margin: 10px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.car-item img {
+    width: 200px;
+}
+
+.car-item button {
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    background: #7e00ff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Botón flotante */
+#floatBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #7e00ff;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Menú flotante */
+#menuFlotante {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    background: #252525;
+    border-radius: 10px;
+    display: none;
+    padding: 10px;
+}
+
+#menuFlotante a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+}
+
+
+
+/* ====== PÁGINAS INDIVIDUALES ====== */
+
+.personaje-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.pj-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.pj-img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.pj-info h2 {
+    margin-top: 0;
+    color: #b66bff;
+}
+
+.pj-info p {
+    line-height: 1.4;
+}
+
+.data-box {
+    margin-top: 15px;
+    background: #333;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.data-box ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.data-box li {
+    margin-bottom: 5px;
+}
+
+/* Curiosidades */
+.curiosidades {
+    margin-top: 20px;
+    background: #292929;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.curiosidades ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+/* Responsivo para celu */
+@media (max-width: 700px) {
+    .pj-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pj-img {
+        width: 80%;
+        margin: auto;
+    }
+}
