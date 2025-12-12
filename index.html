@@ -2,90 +2,135 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murder Drones Fanpage</title>
+
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="top-header">
-    <h1>Murder Drones Fanpage</h1>
+<header class="header">
+    <img src="./img/logo.png" class="logo">
+    <h1 class="titulo">Murder Drones Fanpage</h1>
 
-    <div class="socials">
-        <a href="https://x.com" target="_blank"><img src="img/x.png"></a>
-        <a href="https://instagram.com" target="_blank"><img src="img/ig.png"></a>
-        <a href="https://youtube.com" target="_blank"><img src="img/yt.png"></a>
-        <a href="https://tiktok.com" target="_blank"><img src="img/tk.png"></a>
+    <div class="redes">
+        <a href="https://x.com" target="_blank"><img src="img/x.png" class="icono"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/ig.png" class="icono"></a>
+        <a href="https://youtube.com" target="_blank"><img src="img/yt.png" class="icono"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="img/tk.png" class="icono"></a>
     </div>
 </header>
 
-<!-- Cards personajes principales -->
-<section class="cards-container">
+<button id="modoOscuroBtn" class="btn btn-dark modo-btn">Modo Oscuro</button>
+<button id="webmasterBtn" class="btn btn-secondary modo-btn">Datos Webmaster</button>
 
-    <div class="card">
-        <img src="img/uzi.png">
-        <h3>Uzi</h3>
-        <p>La protagonista, rebelde, inteligente y peligrosa.</p>
-        <a href="uzi.html" class="btn">Ver más</a>
+<section class="cards-section">
+
+    <!-- Card UZI -->
+    <div class="card personaje-card">
+        <img src="./img/uzi.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Uzi Doorman</h5>
+            <p class="card-text">La protagonista rebelde, genio y con ganas de romper cosas.</p>
+            <a href="uzi.html" class="btn btn-primary">Ver más</a>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="img/j.png">
-        <h3>J</h3>
-        <p>Líder de los Murder Drones, fría pero con estilo.</p>
-        <a href="j.html" class="btn">Ver más</a>
+    <!-- Card J -->
+    <div class="card personaje-card">
+        <img src="./img/j.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">SD-J</h5>
+            <p class="card-text">Líder severa y elegante de los Murder Drones.</p>
+            <a href="j.html" class="btn btn-primary">Ver más</a>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="img/n.png">
-        <h3>N</h3>
-        <p>El dron simpático y medio tonto, pero con corazón.</p>
-        <a href="n.html" class="btn">Ver más</a>
+    <!-- Card V -->
+    <div class="card personaje-card">
+        <img src="./img/v.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">SD-V</h5>
+            <p class="card-text">La más sádica, divertida y caótica del equipo.</p>
+            <a href="v.html" class="btn btn-primary">Ver más</a>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="img/v.png">
-        <h3>V</h3>
-        <p>Sádica, peligrosa y adorable a la vez.</p>
-        <a href="v.html" class="btn">Ver más</a>
+    <!-- Card N -->
+    <div class="card personaje-card">
+        <img src="./img/n.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">SD-N</h5>
+            <p class="card-text">N es amable, tierno y rompe la estética asesina del grupo.</p>
+            <a href="n.html" class="btn btn-primary">Ver más</a>
+        </div>
     </div>
 
 </section>
 
-<!-- Carrusel secundario -->
-<section class="carrusel">
-    <h2>Otros personajes</h2>
+<!-- Carrusel -->
+<section class="carrusel-section">
 
-    <div class="car-item">
-        <img src="img/lizzy.png">
-        <button onclick="go('Lizzy')">Info</button>
+<h2 class="subtitulo">Personajes secundarios</h2>
+
+<div id="personajesCarrousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="./img/lizzy.png" class="d-block w-100">
+      <button class="btn btn-info info-btn" onclick="alert('Lizzy es una de las chicas populares del refugio. Tiene una personalidad fuerte y no duda en decir lo que piensa, aunque a veces sea hiriente. Le gusta mantener su estatus y mostrar seguridad, aunque debajo de todo eso es más sensible de lo que aparenta.')">Info</button>
     </div>
 
-    <div class="car-item">
-        <img src="img/doll.png">
-        <button onclick="go('Doll')">Info</button>
+    <div class="carousel-item">
+      <img src="./img/doll.png" class="d-block w-100">
+      <button class="btn btn-info info-btn" onclick="alert('Doll es una Drone misteriosa, callada y con un pasado oscuro. Su comportamiento frío oculta mucho dolor, y sus habilidades la vuelven una figura inquietante. Tiene conexión con los eventos más extraños de Copper-9.')">Info</button>
     </div>
 
-    <div class="car-item">
-        <img src="img/thad.png">
-        <button onclick="go('Thad')">Info</button>
+    <div class="carousel-item">
+      <img src="./img/thad.png" class="d-block w-100" width="500" height="460">
+      <button class="btn btn-info info-btn" onclick="alert('Thad es el típico amigo buena onda del grupo. Es simpático, relajado y siempre intenta mantener el humor incluso en situaciones tensas. No es un valiente héroe, pero sí alguien leal con sus amigos.')">Info</button>
     </div>
 
-    <div class="car-item">
-        <img src="img/khan.png">
-        <button onclick="go('Khan')">Info</button>
+    <div class="carousel-item">
+      <img src="./img/khan.png" class="d-block w-100">
+      <button class="btn btn-info info-btn" onclick="alert('Khan es el padre de Uzi. Es un Worker Drone nervioso, sobreprotector y bastante torpe para manejar situaciones serias. A pesar de sus miedos, realmente quiere cuidar a su hija, aunque a veces la sobreprotección hace que choquen.')">Info</button>
     </div>
-</section>
 
-<!-- Botón flotante -->
-<div id="floatBtn">≡</div>
+  </div>
 
-<div id="menuFlotante">
-    <a href="index.html">Inicio</a>
-    <a href="#musica">Música</a>
-    <a href="#episodios">Episodios</a>
-    <a href="#personajes">Personajes</a>
+  <button class="carousel-control-prev" type="button" data-bs-target="#personajesCarrousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#personajesCarrousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
 </div>
 
+</section>
+
+<!-- Mapa -->
+<section class="mapa-section" align=center>
+    <h2 center>Ubicación del estudio GLITCH</h2>
+    <p>Glitch Studio es un estudio australiano dedicado a animación digital y series web.</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61884953.864896!2d87.22020191760907!3d-18.79111839867817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1ses!2sar!4v1765504660170!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer class="footer">
+    <p>Murder Drones Fanpage, echo por:   <a href="https://github.com/rigbin56-creator" target="_blank">Rigbin56</a> en GitHub</p>
+
+</footer>
+
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,12 +1,22 @@
-// Botón flotante
-document.getElementById("floatBtn").addEventListener("click", () => {
-    let menu = document.getElementById("menuFlotante");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-});
+// Modo oscuro simple
+const body = document.body;
+const modoBtn = document.getElementById("modoOscuroBtn");
 
-// Carrusel info (solo abre alert con texto)
-function go(lizzy) {
-    alert("Información de: " + Lizzy + "\n(skibidi tessa milanesa)");
+if (localStorage.getItem("oscuro") === "si") {
+    body.classList.add("dark-mode");
 }
 
-//agregar los demas personajes JAJAJAJ
+modoBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("oscuro", "si");
+    } else {
+        localStorage.removeItem("oscuro");
+    }
+});
+
+// Datos del Webmaster
+document.getElementById("webmasterBtn").addEventListener("click", () => {
+    alert("Webmaster: Su Mango (Alumno)\nFanpage hecha para el colegio.");
+});

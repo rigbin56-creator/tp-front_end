@@ -1,179 +1,139 @@
 body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f2f2;
     margin: 0;
-    background: #1f1f1f;
-    font-family: Arial;
+    padding: 0;
+}
+
+.dark-mode {
+    background: #1a1a1a;
     color: white;
 }
 
-.top-header {
-    padding: 15px;
-    background: #2d2d2d;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    background: #111;
+    color: white;
 }
 
-.top-header img {
-    width: 30px;
-    margin-left: 10px;
+.logo {
+    width: 70px;
 }
 
-.cards-container {
+.redes {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 30px 0;
+    gap: 10px;
+}
+
+.icono {
+    width: 25px;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+/* Cards */
+.cards-section {
+    display: flex;
     flex-wrap: wrap;
-}
-
-.card {
-    width: 250px;
-    background: #333;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.btn {
-    display: block;
-    margin-top: 10px;
-    padding: 8px;
-    background: #7e00ff;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-}
-
-.carrusel {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.car-item {
-    display: inline-block;
-    margin: 10px;
-    background: #333;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.car-item img {
-    width: 200px;
-}
-
-.car-item button {
-    margin-top: 8px;
-    padding: 8px;
-    border: none;
-    background: #7e00ff;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Botón flotante */
-#floatBtn {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #7e00ff;
-    padding: 15px;
-    border-radius: 50%;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-/* Menú flotante */
-#menuFlotante {
-    position: fixed;
-    right: 20px;
-    bottom: 80px;
-    background: #252525;
-    border-radius: 10px;
-    display: none;
-    padding: 10px;
-}
-
-#menuFlotante a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 6px;
-}
-
-
-
-/* ====== PÁGINAS INDIVIDUALES ====== */
-
-.personaje-page {
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
-    max-width: 900px;
+}
+
+.personaje-card {
+    width: 250px;
+}
+
+/* Carrusel */
+.carrusel-section {
+    padding: 20px;
+    max-width: 500px;
     margin: auto;
 }
 
-.pj-container {
+.info-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+}
+
+.modo-btn {
+    margin: 10px;
+}
+
+/* Mapa */
+.mapa-section {
+    padding: 20px;
+    justify-content: center
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.pj-img {
-    width: 280px;
+/* Resposivo */
+@media (max-width: 600px) {
+    .personaje-card {
+        width: 90%;
+    }
+}
+
+
+
+/* paginas de los murder drones */
+
+/* Fondo de las paginas */
+.page-background {
+    background: url("./img/space_wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Centrado del nombre del personaje */
+.character-title {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenedor general para cada página */
+.character-container {
+    max-width: 700px;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
     border-radius: 10px;
+    color: white;
 }
 
-.pj-info h2 {
-    margin-top: 0;
-    color: #b66bff;
-}
-
-.pj-info p {
-    line-height: 1.4;
-}
-
-.data-box {
-    margin-top: 15px;
-    background: #333;
-    padding: 12px;
-    border-radius: 10px;
-}
-
-.data-box ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.data-box li {
-    margin-bottom: 5px;
-}
-
-/* Curiosidades */
-.curiosidades {
+/* Boton de volver */
+.back-btn {
+    display: inline-block;
     margin-top: 20px;
-    background: #292929;
-    padding: 12px;
-    border-radius: 10px;
+    padding: 10px 18px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
-.curiosidades ul {
-    margin: 0;
-    padding-left: 18px;
+/*ajustes para las paginas de los personajes*/
+.personaje-section {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
 }
 
-/* Responsivo para celu */
-@media (max-width: 700px) {
-    .pj-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .pj-img {
-        width: 80%;
-        margin: auto;
-    }
+.personaje-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
