@@ -18,5 +18,6 @@ modoBtn.addEventListener("click", () => {
 
 // Datos del Webmaster
 document.getElementById("webmasterBtn").addEventListener("click", () => {
-    alert("Webmaster: Su Mango (Alumno)\nFanpage hecha para el colegio.");
+    alert("Webmaster: Rigbin (Matheo)\nFanpage hecha para fans y no fans JAKSKJAJKS");
 });
+
